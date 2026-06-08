@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cravio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- section1 -->
+  <div class="hero-wrapper">
+    <img class="image1" src="images/hero-bg.jpg" alt="Hero Background">
+
+    <section class="main-header">
+      <div class="main-logo">
+        <p class="cravio text-white">Cravio</p>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+
+      <div class="about" id="navMenu">
+        <ul class="about-content">HOME</ul>
+        <ul class="about-content">MENU</ul>
+        <ul class="about-content">ABOUT</ul>
+        <ul class="about-content">BOOK TABLE</ul>
+      </div>
+
+      <div class="user-info">
+        <i class="fa-solid fa-user text-white fa-info"></i>
+        <i class="fa-solid fa-cart-shopping text-white fa-info"></i>
+        <i class="fa-solid fa-magnifying-glass text-white fa-info"></i>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <span class="fast-food">Fast Food Restaurant</span>
+          <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse
+            error unde. Tempora ex doloremque, labore, sunt repellat dolore.</p>
+          <button type="button" class="btn btn-warning text-white rounded-pill">Order Now</button>
+        </div>
+        <div class="carousel-item">
+          <span class="fast-food">Best Burgers in Town</span>
+          <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse
+            error unde. Tempora ex doloremque, labore, sunt repellat dolore.</p>
+          <button type="button" class="btn btn-warning text-white rounded-pill">Order Now</button>
+        </div>
+        <div class="carousel-item">
+          <span class="fast-food">Fresh Pizzas Daily</span>
+          <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse
+            error unde. Tempora ex doloremque, labore, sunt repellat dolore.</p>
+          <button type="button" class="btn btn-warning text-white rounded-pill">Order Now</button>
+        </div>
+      </div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- section2 -->
+  <section class="dark-card">
+    <div class="card bg-dark text-white">
+      <div class="card-body d-flex flex-wrap">
+        <div class="image-circle">
+          <img class="tburger" src="images/o1.jpg" alt="Veg Burger">
+        </div>
+        <div class="circle-content">
+          <p class="tangerine-bold">Tasty Thursday</p>
+          <div class="d-flex align-items-center">
+            <p class="tangerine-bold" style="font-size: 50px; margin-bottom: 0;">15%</p>
+            <p class="tangerine-bold" style="margin-bottom: 0;">off</p>
+          </div>
+          <button type="button" class="btn btn-warning text-white rounded-pill">Order Now <i
+              class="fa-solid fa-cart-shopping text-white"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark text-white">
+      <div class="card-body d-flex flex-wrap">
+        <div class="image-circle">
+          <img class="tburger" src="images/o2.jpg" alt="Pizza">
+        </div>
+        <div class="circle-content">
+          <p class="tangerine-bold">Pizza Days</p>
+          <div class="d-flex align-items-center">
+            <p class="tangerine-bold" style="font-size: 50px; margin-bottom: 0;">20%</p>
+            <p class="tangerine-bold" style="margin-bottom: 0;">off</p>
+          </div>
+          <button type="button" class="btn btn-warning text-white rounded-pill">Order Now <i
+              class="fa-solid fa-cart-shopping text-white"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section3 -->
+  <section class="menu-container">
+    <div class="menu-div">
+      <p class="menu">Our Menu</p>
+    </div>
+    <div class="btn2-div d-flex">
+      <button type="button" class="btn2 filter-btn" data-filter="all">All</button>
+      <button type="button" class="btn2 filter-btn" data-filter="burger">Burger</button>
+      <button type="button" class="btn2 filter-btn" data-filter="pizza">Pizza</button>
+    </div>
+    <div class="foodcard-div">
+      <div class="f1-content-card" data-category="pizza">
+        <div class="card-food">
+          <img class="f1" src="images/f1.png" alt="pizza">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Delicious Pizza</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+      <div class="f1-content-card" data-category="burger">
+        <div class="card-food">
+          <img class="f1" src="images/f2.png" alt="burger">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Delicious Burger</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+      <div class="f1-content-card" data-category="pizza">
+        <div class="card-food">
+          <img class="f1" src="images/f3.png" alt="pizza">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Delicious Pizza</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+      <div class="f1-content-card" data-category="pizza">
+        <div class="card-food">
+          <img class="f1" src="images/f6.png" alt="pizza">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Delicious Pizza</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+      <div class="f1-content-card" data-category="burger">
+        <div class="card-food">
+          <img class="f1" src="images/f7.png" alt="burger">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Tasty Burger</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+      <div class="f1-content-card" data-category="burger">
+        <div class="card-food">
+          <img class="f1" src="images/f8.png" alt="burger">
+        </div>
+        <div class="f1-content">
+          <p class="content-heading">Tasty Burger</p>
+          <p class="subcontent-heading">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+            voluptatem repellendus sed eaque</p>
+        </div>
+        <div class="moneycart-div d-flex">
+          <div class="money-div"><p style="color: white;">$18</p></div>
+          <div class="cart-div"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-more">
+      <button type="button" class="btn btn-warning text-white rounded-pill">View More</button>
+    </div>
+  </section>
+
+  <!-- section4 -->
+  <section class="form-container">
+    <div class="book-heading">Book a table</div>
+    <div class="d-flex justify-content-around flex-wrap book-inner">
+      <div>
+        <form class="book-form" action="">
+          <input type="text" class="book" placeholder="Your Name">
+          <input type="text" class="book" placeholder="Phone Number">
+          <input type="text" class="book" placeholder="Your Email">
+          <select id="persons">
+            <option>How many persons?</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <input type="date" id="booking-date">
+          <button type="button" class="btn btn-warning text-white rounded-pill">BOOK NOW</button>
+        </form>
+      </div>
+      <div class="map-div">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15650.403223926785!2d77.50165757477099!3d11.29072706483134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba91257b56deed9%3A0xb77a9c29234017!2sTalayampalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1780744639263!5m2!1sen!2sin"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="foot">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <p class="foot-info text-white text-center">Contact Us</p>
+        <div class="d-flex align-items-center flex-column">
+          <p class="text-white">Location</p>
+          <p class="text-white">Call +91 9123 456 789</p>
+          <p class="text-white">demo@gmail.com</p>
+        </div>
+      </div>
+      <div class="cravio-content foot-col">
+        <p class="cravio text-white text-center">Cravio</p>
+        <p class="text-white text-center">
+          Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+          words, combined with
+        </p>
+        <div class="d-flex justify-content-center gap-2">
+          <i class="foot-logo fa-brands fa-facebook text-white"></i>
+          <i class="foot-logo fa-brands fa-twitter text-white"></i>
+          <i class="foot-logo fa-brands fa-linkedin text-white"></i>
+          <i class="foot-logo fa-brands fa-square-instagram text-white"></i>
+          <i class="foot-logo fa-brands fa-pinterest text-white"></i>
+        </div>
+      </div>
+      <div class="foot-col">
+        <p class="foot-info text-white text-center">Opening Hours</p>
+        <div class="d-flex align-items-center flex-column">
+          <p class="text-white">Everyday</p>
+          <p class="text-white">10.00 Am - 10.00 Pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-copyright d-flex align-items-center flex-column">
+      <p class="text-white">© 2026 All Rights Reserved By Free Html Templates</p>
+      <p class="text-white">© Distributed By ThemeWagon</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger toggle
+    document.getElementById('hamburgerBtn').addEventListener('click', function () {
+      document.getElementById('navMenu').classList.toggle('open');
+    });
+
+    // Filter buttons
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.f1-content-card');
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) {
+          b.style.backgroundColor = '';
+          b.style.color = '';
+        });
+        btn.style.backgroundColor = 'black';
+        btn.style.color = 'white';
+
+        const filter = btn.dataset.filter;
+        cards.forEach(function (card) {
+          card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
